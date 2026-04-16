@@ -1,10 +1,13 @@
-import "./App.css";
-import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
 
 function App() {
   return (
     <>
-      <Home />
+      <Navbar />
+      <Hero />
+      <Skills />
     </>
   );
 }

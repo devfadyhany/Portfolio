@@ -46,13 +46,16 @@ function NavList({ mobile = false, activeItem, setActiveItem, setIsOpen }) {
 
 function LetsConnectButton() {
   return (
-    <button className="relative font-semibold px-5 py-2 border border-white group overflow-hidden">
+    <a
+      href="#contact"
+      className="relative font-semibold px-5 py-2 border border-white group overflow-hidden"
+    >
       <span className="absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition duration-300" />
 
       <span className="relative z-10 text-white group-hover:text-slate-900 transition duration-300">
         Let's Connect
       </span>
-    </button>
+    </a>
   );
 }
 
@@ -61,11 +64,11 @@ function Navbar() {
   const [activeItem, setActiveItem] = useState("Home");
   const [scrolled, setScrolled] = useState(false);
 
-  const handleScroll = () => {
-    setScrolled(window.scrollY > 50);
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -75,7 +78,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`w-full py-4 text-white transition fixed top-0 z-50 ${scrolled ? "bg-slate-900" : "bg-transparent"}`}
+      className={`w-full py-4 text-white transition fixed top-0 z-50 ${scrolled ? "bg-black/40 backdrop-blur-md border-b border-white/10" : "bg-transparent"}`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
@@ -106,9 +109,7 @@ function Navbar() {
 
         {/* ////////////////////// Mobile ////////////////////// */}
         {isOpen && (
-          <div
-            className={`md:hidden absolute top-[100%] left-0 w-full p-6 flex flex-col gap-6 border-t border-slate-800 transition ${scrolled ? "bg-slate-900" : "bg-transparent"}`}
-          >
+          <div className="md:hidden absolute top-[100%] left-0 w-full p-6 flex flex-col gap-6 border-t border-slate-800 transition bg-black/80 backdrop-blur-md border-b border-white/10">
             <NavList
               mobile={true}
               activeItem={activeItem}

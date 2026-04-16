@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.progress-circle {
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(#3b82f6 calc(var(--percentage) * 1%), #1f2937 0);
+  position: relative;
+}
+
+.progress-circle::after {
+  content: "";
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  background-color: #151515;
+  border-radius: 50%;
+}
+
+.progress-text {
+  position: relative;
+  z-index: 10;
+}
