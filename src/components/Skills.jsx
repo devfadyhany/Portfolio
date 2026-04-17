@@ -63,7 +63,7 @@ function Skills() {
   return (
     <section id="skills" className="text-center pb-20">
       <div className="relative container mx-auto px-4">
-        <div className="bg-[#151515] rounded-xl py-16 px-8 -mt-12 shadow-2xl">
+        <div className="skills-container rounded-xl py-16 px-8 -mt-12 shadow-2xl">
           <h2 className="text-4xl font-bold mb-4">Skills</h2>
           <p className="text-gray-400 mb-12">You Can See My Skills Here</p>
 

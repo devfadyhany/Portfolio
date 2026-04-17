@@ -52,7 +52,7 @@ function Hero() {
   }, [text, isDeleting, loopNum]);
 
   return (
-    <section className="w-full bg-gradient-to-br from-black via-gray-900 to-black text-white pb-32">
+    <section className="w-full bg-gradient-to-br from-black via-gray-900 to-black text-white pb-8 lg:pb-32">
       <div className="container mx-auto px-4">
         <div className="relative min-h-screen flex flex-col justify-center lg:flex-row lg:justify-between items-center">
           {/* /////////////////////// Text /////////////////////// */}

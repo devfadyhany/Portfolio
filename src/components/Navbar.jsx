@@ -48,7 +48,7 @@ function LetsConnectButton() {
   return (
     <a
       href="#contact"
-      className="relative font-semibold px-5 py-2 border border-white group overflow-hidden"
+      className="relative font-semibold px-5 py-2 border border-white group overflow-hidden text-center"
     >
       <span className="absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition duration-300" />
 
@@ -78,7 +78,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`w-full py-4 text-white transition fixed top-0 z-50 ${scrolled ? "bg-black/40 backdrop-blur-md border-b border-white/10" : "bg-transparent"}`}
+      className={`w-full py-4 text-white transition fixed top-0 z-50 border-white/10 ${scrolled ? "bg-black/40 backdrop-blur-md border-b" : "bg-transparent"}`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
