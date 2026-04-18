@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router";
 import Layout from "./components/Layout";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -10,10 +11,7 @@ function App() {
           <Route index element={<Navigate to="section1" replace />} />
 
           {/* These match the 'to' props in MultiSection */}
-          <Route
-            path="section1"
-            element={<div className="text-white">Content 1</div>}
-          />
+          <Route path="section1" element={<Projects />} />
           <Route
             path="section2"
             element={<div className="text-white">Content 2</div>}
