@@ -47,7 +47,7 @@ function NavList({ mobile = false, activeItem, setActiveItem, setIsOpen }) {
 function LetsConnectButton() {
   return (
     <a
-      href="#contact"
+      href="/section2#contact"
       className="relative font-semibold px-5 py-2 border border-white group overflow-hidden text-center"
     >
       <span className="absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition duration-300" />

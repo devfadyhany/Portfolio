@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router";
 import Layout from "./components/Layout";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -12,10 +13,7 @@ function App() {
 
           {/* These match the 'to' props in MultiSection */}
           <Route path="section1" element={<Projects />} />
-          <Route
-            path="section2"
-            element={<div className="text-white">Content 2</div>}
-          />
+          <Route path="section2" element={<Contact />} />
           <Route
             path="section3"
             element={<div className="text-white">Content 3</div>}

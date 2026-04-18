@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import MultiSection from "./MultiSection";
 import Navbar from "./Navbar";
 import Skills from "./Skills";
+import Footer from "./Footer";
 
 function Layout() {
   return (
@@ -12,6 +13,7 @@ function Layout() {
       <Skills />
       <MultiSection />
       <Outlet />
+      <Footer />
     </>
   );
 }
