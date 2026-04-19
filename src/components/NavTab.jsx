@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 
 const Tab = ({ to, label, roundedClass }) => {
-  const baseClass = `relative isolate border border-white/20 text-sm px-6 py-2 md:px-16 md:py-4 group overflow-hidden ${roundedClass}`;
+  const baseClass = `relative isolate flex items-center justify-center w-full h-full border border-white/10 text-sm px-6 py-3 md:px-12 md:py-5 group overflow-hidden ${roundedClass}`;
 
   return (
-    <li>
+    <li className="flex-1 flex">
       <NavLink
         to={to}
         className={({ isActive }) => `${baseClass} ${isActive ? "active" : ""}`}
@@ -27,11 +27,17 @@ const Tab = ({ to, label, roundedClass }) => {
 function NavTab() {
   return (
     <>
-      <ul className="flex w-fit mx-auto text-center bg-gradient-to-r py-2 md:py-4 from-gray-600/40 to-gray-600/50 rounded-full">
-        <Tab to="section1" label="1st Section" roundedClass="rounded-s-full" />
-        <Tab to="section2" label="2nd Section" roundedClass="" />
-        <Tab to="section3" label="3rd Section" roundedClass="rounded-e-full" />
-      </ul>
+      <nav className="w-full max-w-4xl mx-auto px-4">
+        <ul className="flex w-full mx-auto text-center bg-gray-800/40 rounded-full overflow-hidden border border-white/10">
+          <Tab to="section1" label="Projects" roundedClass="rounded-s-full" />
+          <Tab to="section2" label="Contact" roundedClass="" />
+          <Tab
+            to="section3"
+            label="Graduation Project"
+            roundedClass="rounded-e-full"
+          />
+        </ul>
+      </nav>
     </>
   );
 }

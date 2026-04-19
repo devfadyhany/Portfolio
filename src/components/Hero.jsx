@@ -52,11 +52,11 @@ function Hero() {
   }, [text, isDeleting, loopNum]);
 
   return (
-    <section className="w-full bg-gradient-to-br from-black via-gray-900 to-black text-white pb-8 lg:pb-32">
+    <section className="w-full bg-gradient-to-br from-black via-gray-900 to-black text-white pb-8 lg:pb-32 lg:pt-4">
       <div className="container mx-auto px-4">
-        <div className="relative min-h-[90vh] flex flex-col justify-center lg:flex-row lg:items-center lg:gap-12 py-20">
+        <div className="relative min-h-[70vh] lg:min-h-[700px] w-full mx-auto flex flex-col justify-center lg:flex-row lg:items-center lg:gap-12 py-20">
           {/* /////////////////////// Text /////////////////////// */}
-          <div className="flex flex-col gap-6 w-full text-center lg:text-left">
+          <div className="flex flex-col gap-6 w-full text-center lg:text-left ">
             <div className="w-fit px-4 py-2 rounded-lg border border-white/20 bg-gradient-to-r from-blue-500/10 to-purple-500/10 text-sm md:text-md font-semibold mx-auto lg:mx-0">
               Welcome To My Portfolio
             </div>
@@ -86,12 +86,15 @@ function Hero() {
           </div>
 
           {/* /////////////////////// Image /////////////////////// */}
-          <div className="w-1/2 hidden lg:flex justify-end mt-12">
-            <img
-              src={profileImage}
-              alt="Profile"
-              className="w-72 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)] animate-float rounded-lg lg:me-6 xl:me-12"
-            />
+          <div className="hidden lg:flex justify-end lg:justify-end">
+            <div className="relative group me-12">
+              {/* Decorative background glow */}
+              <img
+                src={profileImage}
+                alt="Profile"
+                className="w-96 xl:w-[30rem] drop-shadow-[0_0_15px_rgba(59,130,246,0.5)] animate-float rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </div>

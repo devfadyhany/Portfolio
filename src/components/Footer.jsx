@@ -3,6 +3,11 @@ import SocialList from "./SocialList";
 function Footer() {
   return (
     <footer className="relative bg-black pt-20 pb-10 text-white">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 right-0 size-[300px] -translate-y-1/2 translate-x-1/3 rounded-full bg-gradient-to-br from-cyan-400/40 to-blue-600/40 blur-[100px]" />
+        <div className="absolute bottom-0 left-0 size-[300px] translate-y-1/3 -translate-x-1/4 rounded-full bg-gradient-to-tr from-blue-600/40 to-cyan-400/40 blur-[100px]" />
+      </div>
+
       <div className="skills-container absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-5xl transform rounded-3xl p-8 shadow-2xl md:p-12">
         <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
           <h2 className="text-2xl font-bold lg:text-3xl">
@@ -22,17 +27,12 @@ function Footer() {
         </div>
       </div>
 
-      {/* Main Footer Content */}
       <div className="container mx-auto mt-16 px-6">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
-          {/* Logo/Brand */}
           <h1 className="text-3xl font-bold tracking-tight">Portfolio</h1>
-
-          {/* Social Icons */}
           <SocialList />
         </div>
 
-        {/* Copyright */}
         <div className="mt-12 border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
           <p>--© Copyrights 2026-- All Rights Reserved Here By Fady Hany.</p>
         </div>
