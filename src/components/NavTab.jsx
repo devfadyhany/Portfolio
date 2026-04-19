@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const Tab = ({ to, label, roundedClass }) => {
-  const baseClass = `relative isolate flex items-center justify-center w-full h-full border border-white/10 text-sm px-6 py-3 md:px-12 md:py-5 group overflow-hidden ${roundedClass}`;
+  const baseClass = `relative isolate flex items-center justify-center w-full h-full border border-white/10 text-md font-semibold px-6 py-3 md:px-12 group overflow-hidden ${roundedClass}`;
 
   return (
     <li className="flex-1 flex">
@@ -11,10 +11,9 @@ const Tab = ({ to, label, roundedClass }) => {
       >
         {({ isActive }) => (
           <>
-            {/* Active/Hover State: Visible when active OR hovering */}
             <span
               className={`absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-400 transition-opacity duration-300 -z-10 ${roundedClass} ${isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}
-            ></span>
+            />
 
             {label}
           </>
