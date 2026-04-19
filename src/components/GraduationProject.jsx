@@ -2,12 +2,14 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import Demo from "../assets/Demo.mp4";
+
 function GraduationProject() {
   const ProjectDetails = {
     name: "Study Smart",
     description:
       "an AI-powered productivity assistant for CS students (Level 1–4), that combines time management, exam generation, project collaboration, and progress tracking — all in one platform.",
-    video: "/src/assets/Demo.mp4",
+    video: Demo,
     github: "https://github.com/FadyAdel310/StudySmart",
     tech: [
       "React",

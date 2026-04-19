@@ -2,6 +2,12 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
+import project4 from "../assets/project4.png";
+import project5 from "../assets/project5.png";
+
 function ProjectCard({ project }) {
   return (
     <div
@@ -51,7 +57,7 @@ function Projects() {
       name: "StepUp",
       description:
         "A non-responsive shoe store landing page built with pure HTML and CSS.",
-      image: "/src/assets/project1.png",
+      image: project1,
       github: "https://github.com/devfadyhany/StepUp",
       live: "https://devfadyhany.github.io/StepUp/",
     },
@@ -60,7 +66,7 @@ function Projects() {
       name: "CompuCart",
       description:
         "A modern, non-responsive computer & electronics store landing page.",
-      image: "/src/assets/project2.png",
+      image: project2,
       github: "https://github.com/devfadyhany/CompuCart",
       live: "https://devfadyhany.github.io/CompuCart/",
     },
@@ -69,7 +75,7 @@ function Projects() {
       name: "Nusr-Et",
       description:
         "A modern, responsive restaurant landing page for a premium steakhouse.",
-      image: "/src/assets/project3.png",
+      image: project3,
       github: "https://github.com/devfadyhany/Nusr-Et",
       live: "https://devfadyhany.github.io/Nusr-Et/",
     },
@@ -78,7 +84,7 @@ function Projects() {
       name: "Medicare",
       description:
         "A simple multi-page, JavaScript-powered medical products e-commerce web app.",
-      image: "/src/assets/project4.png",
+      image: project4,
       github: "https://github.com/devfadyhany/Medicare",
       live: "https://devfadyhany.github.io/Medicare/",
     },
@@ -87,7 +93,7 @@ function Projects() {
       name: "DigitalPro",
       description:
         "A single-page, Tailwind CSS template for a marketing agency.",
-      image: "/src/assets/project5.png",
+      image: project5,
       github: "https://github.com/devfadyhany/DigitalPro",
       live: "https://devfadyhany.github.io/DigitalPro/",
     },

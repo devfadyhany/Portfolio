@@ -1,3 +1,5 @@
+import contact from "../assets/contact.png";
+
 function CustomInput({ type, placeholder }) {
   return (
     <div className="col-span-2 md:col-span-1">
@@ -18,10 +20,7 @@ function Contact() {
     >
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <div className="flex flex-col items-center justify-center lg:items-end">
-          <img
-            src="/src/assets/contact.png"
-            className="w-full hidden lg:block"
-          />
+          <img src={contact} className="w-full hidden lg:block" />
         </div>
 
         <div className="w-full">
