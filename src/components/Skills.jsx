@@ -6,11 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
 const SKILLS_DATA = [
-  { name: "React", percentage: 90 },
-  { name: "Node.js", percentage: 75 },
-  { name: "Tailwind", percentage: 95 },
-  { name: "MongoDB", percentage: 70 },
-  { name: "JavaScript", percentage: 85 },
+  { name: "HTML5", percentage: 95 },
+  { name: "CSS3", percentage: 90 },
+  { name: "Responsive Design", percentage: 90 },
+  { name: "JavaScript (ES6+)", percentage: 85 },
+  { name: "React", percentage: 80 },
+  { name: "Bootstrap", percentage: 95 },
+  { name: "Tailwind", percentage: 90 },
+  { name: "Express.js", percentage: 90 },
+  { name: "MongoDB", percentage: 90 },
 ];
 
 function SkillCircle({ name, percentage }) {
