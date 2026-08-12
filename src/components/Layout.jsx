@@ -1,18 +1,16 @@
+import { useState } from "react";
 import { Outlet } from "react-router";
-import Hero from "./Hero";
-import MultiSection from "./MultiSection";
+
 import Navbar from "./Navbar";
-import Skills from "./Skills";
 import Footer from "./Footer";
 
 function Layout() {
+  const [activeTab, setActiveTab] = useState("projects");
+
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Skills />
-      <MultiSection />
-      <Outlet />
+      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Outlet context={{ activeTab, setActiveTab }} />
       <Footer />
     </>
   );

@@ -18,7 +18,7 @@ function Contact() {
       id="contact"
       className="relative w-full bg-gradient-to-r from-cyan-400 to-blue-600 px-6 pb-32 pt-16 text-white"
     >
-      <div className="container mx-auto grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+      <div className="max-w-7xl container mx-auto grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <div className="flex flex-col items-center justify-center lg:items-end">
           <img src={contact} className="w-full hidden lg:block" />
         </div>

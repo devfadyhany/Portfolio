@@ -10,7 +10,7 @@ function GraduationProject() {
     description:
       "an AI-powered productivity assistant for CS students (Level 1–4), that combines time management, exam generation, project collaboration, and progress tracking — all in one platform.",
     video: Demo,
-    github: "https://github.com/FadyAdel310/StudySmart",
+    github: "https://github.com/devfadyhany/StudySmart",
     tech: [
       "React",
       "Bootstrap",
@@ -25,7 +25,7 @@ function GraduationProject() {
 
   return (
     <section className="bg-black pb-32">
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl container mx-auto px-4">
         <div className="flex items-center gap-4 mb-10">
           <FontAwesomeIcon
             icon={faGraduationCap}

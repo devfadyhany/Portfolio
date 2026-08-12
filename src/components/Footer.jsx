@@ -27,14 +27,14 @@ function Footer() {
         </div>
       </div>
 
-      <div className="container mx-auto mt-16 px-6">
+      <div className="max-w-7xl container mx-auto mt-16 px-6">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <h1 className="text-3xl font-bold tracking-tight">Portfolio</h1>
           <SocialList />
         </div>
 
         <div className="mt-12 border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-          <p>--© Copyrights 2026-- All Rights Reserved Here By Fady Hany.</p>
+          <p>--© Copyrights 2026-- All Rights Reserved Here By devfadyhany.</p>
         </div>
       </div>
     </footer>

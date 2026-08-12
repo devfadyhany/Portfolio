@@ -1,17 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedinIn,
-  faFacebookF,
-  faInstagram,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-
-const socialLinks = [
-  { icon: faLinkedinIn, href: "https://linkedin.com/in/dev-fady-hany" },
-  { icon: faFacebookF, href: "https://facebook.com/fady.hany.528316" },
-  { icon: faInstagram, href: "https://instagram.com/xxfadyhanyxx" },
-  { icon: faGithub, href: "https://github.com/devfadyhany/" },
-];
+import { socialLinks } from "../constants/navigations";
 
 function SocialItem({ href, icon }) {
   return (

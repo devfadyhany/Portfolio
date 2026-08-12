@@ -53,7 +53,7 @@ function Hero() {
 
   return (
     <section className="w-full bg-gradient-to-br from-black via-gray-900 to-black text-white pb-8 lg:pb-32 lg:pt-4">
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl container mx-auto px-4">
         <div className="relative min-h-[70vh] lg:min-h-[700px] w-full mx-auto flex flex-col justify-center lg:flex-row lg:items-center lg:gap-12 py-20">
           {/* /////////////////////// Text /////////////////////// */}
           <div className="flex flex-col gap-6 w-full text-center lg:text-left ">

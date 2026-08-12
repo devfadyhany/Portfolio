@@ -4,12 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import SocialList from "./SocialList";
-
-const navLinks = [
-  { name: "Home", href: "#" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-];
+import { navLinks } from "../constants/navigations";
 
 function NavItem({ name, href, active, onClick }) {
   return (
@@ -25,7 +20,14 @@ function NavItem({ name, href, active, onClick }) {
   );
 }
 
-function NavList({ mobile = false, activeItem, setActiveItem, setIsOpen }) {
+function NavList({
+  mobile = false,
+  activeItem,
+  setActiveItem,
+  setIsOpen,
+  activeTab,
+  setActiveTab,
+}) {
   return (
     <ul className={`flex gap-6 ${mobile ? "flex-col" : "items-center"}`}>
       {navLinks.map((link) => (
@@ -37,6 +39,7 @@ function NavList({ mobile = false, activeItem, setActiveItem, setIsOpen }) {
           onClick={() => {
             if (mobile) setIsOpen(false);
             setActiveItem(link.name);
+            if (link.tabId) setActiveTab(link.tabId);
           }}
         />
       ))}
@@ -44,10 +47,11 @@ function NavList({ mobile = false, activeItem, setActiveItem, setIsOpen }) {
   );
 }
 
-function LetsConnectButton() {
+function LetsConnectButton({ setActiveTab }) {
   return (
     <a
-      href="/section2#contact"
+      href="#contact"
+      onClick={() => setActiveTab("contact")}
       className="relative font-semibold px-5 py-2 border border-white group overflow-hidden text-center"
     >
       <span className="absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition duration-300" />
@@ -59,7 +63,7 @@ function LetsConnectButton() {
   );
 }
 
-function Navbar() {
+function Navbar({ activeTab, setActiveTab }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("Home");
   const [scrolled, setScrolled] = useState(false);
@@ -80,7 +84,7 @@ function Navbar() {
     <nav
       className={`w-full py-4 text-white transition fixed top-0 z-50 border-white/10 ${scrolled ? "bg-black/40 backdrop-blur-md border-b" : "bg-transparent"}`}
     >
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl container mx-auto px-4">
         <div className="flex justify-between items-center">
           <h2 className="font-bold text-3xl">Portfolio</h2>
 
@@ -90,10 +94,12 @@ function Navbar() {
               activeItem={activeItem}
               setActiveItem={setActiveItem}
               setIsOpen={setIsOpen}
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
             />
 
             <SocialList />
-            <LetsConnectButton />
+            <LetsConnectButton setActiveTab={setActiveTab} />
           </div>
 
           <button
@@ -115,12 +121,14 @@ function Navbar() {
               activeItem={activeItem}
               setActiveItem={setActiveItem}
               setIsOpen={setIsOpen}
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
             />
 
             <hr className="border-slate-800" />
 
             <SocialList />
-            <LetsConnectButton />
+            <LetsConnectButton setActiveTab={setActiveTab} />
           </div>
         )}
       </div>
