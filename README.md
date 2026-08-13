@@ -2,7 +2,7 @@
 
 A SPA using React. Developed as part of **SEF-Academy Front-End Diploma**.
 
-🔗 [**Live Demo**](https://devfadyhany.github.io/Portfolio/)
+🔗 [**Live Demo**](https://devfadyhany-portfolio.vercel.app/)
 
 ---
 
