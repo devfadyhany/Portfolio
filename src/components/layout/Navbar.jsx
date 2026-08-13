@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-import SocialList from "./SocialList";
-import { navLinks } from "../constants/navigations";
+import SocialList from "../ui/SocialList";
+import { navLinks } from "../../constants/navigations";
 
 function NavItem({ name, href, active, onClick }) {
   return (
@@ -86,7 +86,12 @@ function Navbar({ activeTab, setActiveTab }) {
     >
       <div className="max-w-7xl container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <h2 className="font-bold text-3xl">Portfolio</h2>
+          <div className="flex justify-center items-center gap-2">
+            <img src="/favicon.svg" alt="Logo" className="h-8 w-auto" />
+            <span className="hidden lg:block font-bold text-3xl">
+              Portfolio
+            </span>
+          </div>
 
           {/* ////////////////////// Desktop ////////////////////// */}
           <div className="hidden md:flex items-center gap-6">

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { socialLinks } from "../constants/navigations";
+import { socialLinks } from "../../constants/navigations";
 
 function SocialItem({ href, icon }) {
   return (

@@ -2,14 +2,14 @@ import { useState } from "react";
 
 import NavTab from "./NavTab";
 
-import Projects from "./Projects";
-import Contact from "./Contact";
-import GraduationProject from "./GraduationProject";
+import ProjectsSection from "../sections/ProjectsSection";
+import ContactSection from "../sections/ContactSection";
+import GraduationProject from "../sections/GraduationProject";
 
 function MultiSection({ active, onChange }) {
   const tabs = {
-    projects: <Projects />,
-    contact: <Contact />,
+    projects: <ProjectsSection />,
+    contact: <ContactSection />,
     graduationProject: <GraduationProject />,
   };
 

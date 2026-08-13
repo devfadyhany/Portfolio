@@ -1,4 +1,4 @@
-import { tabs } from "../constants/navigations";
+import { tabs } from "../../constants/navigations";
 
 const Tab = ({ id, label, shortLabel, active, onClick, roundedClass }) => {
   const isActive = active === id;

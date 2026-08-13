@@ -2,7 +2,8 @@ import { useOutletContext } from "react-router";
 
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
-import MultiSection from "../components/MultiSection";
+import MultiSection from "../components/ui/MultiSection";
+import NewsletterCTA from "../components/ui/NewsletterCTA";
 
 const Home = () => {
   const { activeTab, setActiveTab } = useOutletContext();
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Skills />
       <MultiSection active={activeTab} onChange={setActiveTab} />
+      <NewsletterCTA />
     </>
   );
 };

@@ -1,18 +1,6 @@
-import contact from "../assets/contact.png";
+import CustomInput from "../ui/CustomInput";
 
-function CustomInput({ type, placeholder }) {
-  return (
-    <div className="col-span-2 md:col-span-1">
-      <input
-        type={type}
-        placeholder={placeholder}
-        className="w-full rounded-2xl border border-white/20 bg-white/10 px-6 py-4 text-white placeholder:text-white focus:placeholder:text-gray-600 focus:border-white focus:bg-white focus:text-black focus:outline-none focus:ring-1 focus:ring-white transition-all duration-300"
-      />
-    </div>
-  );
-}
-
-function Contact() {
+function ContactSection() {
   return (
     <section
       id="contact"
@@ -20,7 +8,10 @@ function Contact() {
     >
       <div className="max-w-7xl container mx-auto grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <div className="flex flex-col items-center justify-center lg:items-end">
-          <img src={contact} className="w-full hidden lg:block" />
+          <img
+            src="src/assets/contact.png"
+            className="w-full hidden lg:block"
+          />
         </div>
 
         <div className="w-full">
@@ -35,13 +26,7 @@ function Contact() {
             <CustomInput type="email" placeholder="Email Address" />
             <CustomInput type="tel" placeholder="Phone No." />
 
-            <div className="col-span-2">
-              <textarea
-                placeholder="Message"
-                rows="8"
-                className="w-full rounded-2xl border border-white/20 bg-white/10 px-6 py-5 text-white placeholder:text-white focus:placeholder:text-gray-600 focus:border-white focus:bg-white focus:text-black focus:outline-none focus:ring-1 focus:ring-white transition-all resize-none"
-              ></textarea>
-            </div>
+            <CustomInput type="textArea" placeholder="Message" />
 
             <a
               href="#contact"
@@ -60,4 +45,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactSection;

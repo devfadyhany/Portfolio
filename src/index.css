@@ -56,3 +56,12 @@ button {
   position: relative;
   z-index: 10;
 }
+
+.project-gallery .swiper-button-next,
+.project-gallery .swiper-button-prev {
+  color: #22d3ee;
+}
+
+.project-gallery .swiper-pagination-bullet-active {
+  background: linear-gradient(to right, #22d3ee, #2563eb);
+}

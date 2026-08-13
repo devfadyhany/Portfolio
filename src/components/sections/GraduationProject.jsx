@@ -2,7 +2,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Demo from "../assets/Demo.mp4";
+import Demo from "../../assets/Demo.mp4";
 
 function GraduationProject() {
   const ProjectDetails = {
