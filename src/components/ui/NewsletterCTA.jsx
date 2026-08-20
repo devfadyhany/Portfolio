@@ -1,6 +1,6 @@
 function NewsletterCTA() {
   return (
-    <div className="relative z-10 -mt-30">
+    <div className="relative z-10 -mt-48">
       <div className="skills-container mx-auto -mb-24 w-[90%] max-w-5xl rounded-3xl p-8 shadow-2xl md:p-12">
         <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
           <h2 className="text-2xl font-bold lg:text-3xl text-center lg:text-left">

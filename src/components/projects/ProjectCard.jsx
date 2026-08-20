@@ -7,7 +7,10 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 const ProjectCard = ({ project }) => {
   const navigate = useNavigate();
 
-  const goToDetails = () => navigate(`/projects/${project.id}`);
+  const goToDetails = () => {
+    navigate(`/projects/${project.id}`);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div

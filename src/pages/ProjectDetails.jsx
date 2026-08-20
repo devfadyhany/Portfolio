@@ -48,7 +48,7 @@ function ProjectDetails() {
   const gallery = project.images?.length ? project.images : [project.thumbnail];
 
   return (
-    <section className="min-h-screen bg-black text-white pt-32 pb-20 px-4">
+    <section className="min-h-screen bg-black text-white py-24 px-4">
       <div className="max-w-5xl container mx-auto">
         <button
           type="button"
