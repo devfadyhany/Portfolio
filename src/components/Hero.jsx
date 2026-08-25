@@ -3,7 +3,7 @@ import profileImage from "../assets/profile.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 
-function Hero() {
+function Hero({ setActiveTab }) {
   const words = ["Software Engineer", "Full-Stack Developer"];
 
   const [text, setText] = useState("");
@@ -75,6 +75,7 @@ function Hero() {
 
             <a
               href="#contact"
+              onClick={() => setActiveTab("contact")}
               className="mt-4 lg:mt-8 mx-auto lg:mx-0 text-xl font-semibold flex items-center gap-2 hover:text-blue-400 transition"
             >
               <span>Let's Connect</span>

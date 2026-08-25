@@ -71,7 +71,7 @@ function ProjectDetails() {
                 <img
                   src={img}
                   alt={`${project.name} screenshot ${index + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-fit"
                 />
               </SwiperSlide>
             ))}

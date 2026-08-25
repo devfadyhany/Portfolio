@@ -4,7 +4,7 @@ function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative w-full bg-gradient-to-r from-cyan-400 to-blue-600 px-6 pb-32 pt-16 text-white"
+      className="relative w-full bg-gradient-to-r from-cyan-400 to-blue-600 px-6 py-16 text-white"
     >
       <div className="max-w-7xl container mx-auto grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <div className="flex flex-col items-center justify-center lg:items-end">
@@ -30,7 +30,7 @@ function ContactSection() {
 
             <a
               href="#contact"
-              className="w-full lg:w-1/2 col-span-2 lg:col-span-1 relative font-semibold py-2 border border-white bg-white group overflow-hidden text-center mb-8"
+              className="w-full lg:w-1/2 col-span-2 lg:col-span-1 relative font-semibold py-2 border border-white bg-white group overflow-hidden text-center mb-16"
             >
               <span className="absolute inset-0 bg-black translate-x-[-100%] group-hover:translate-x-0 transition duration-300" />
 

@@ -1,7 +1,7 @@
 function NewsletterCTA() {
   return (
-    <div className="relative z-10 -mt-48">
-      <div className="skills-container mx-auto -mb-24 w-[90%] max-w-5xl rounded-3xl p-8 shadow-2xl md:p-12">
+    <div className="relative z-10">
+      <div className="newsletter-container w-[90%] max-w-5xl rounded-3xl shadow-2xl p-8 md:p-12">
         <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
           <h2 className="text-2xl font-bold lg:text-3xl text-center lg:text-left">
             See My Projects At Once & leave Here Your E-mail Address

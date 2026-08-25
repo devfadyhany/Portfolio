@@ -86,12 +86,12 @@ function Navbar({ activeTab, setActiveTab }) {
     >
       <div className="max-w-7xl container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <div className="flex justify-center items-center gap-2">
+          <a href="/" className="flex justify-center items-center gap-2">
             <img src="/favicon.svg" alt="Logo" className="h-8 w-auto" />
             <span className="hidden lg:block font-bold text-3xl">
               Portfolio
             </span>
-          </div>
+          </a>
 
           {/* ////////////////////// Desktop ////////////////////// */}
           <div className="hidden md:flex items-center gap-6">

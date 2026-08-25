@@ -2,7 +2,7 @@ import SocialList from "../ui/SocialList";
 
 function Footer() {
   return (
-    <footer className="relative bg-black pt-20 pb-10 text-white">
+    <footer className="relative bg-black pt-32 lg:pt-20 pb-10 text-white">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 size-[300px] -translate-y-1/2 translate-x-1/3 rounded-full bg-gradient-to-br from-cyan-400/40 to-blue-600/40 blur-[100px]" />
         <div className="absolute bottom-0 left-0 size-[300px] translate-y-1/3 -translate-x-1/4 rounded-full bg-gradient-to-tr from-blue-600/40 to-cyan-400/40 blur-[100px]" />

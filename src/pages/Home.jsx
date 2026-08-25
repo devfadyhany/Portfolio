@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <>
-      <Hero />
+      <Hero setActiveTab={setActiveTab} />
       <Skills />
       <MultiSection active={activeTab} onChange={setActiveTab} />
       <NewsletterCTA />

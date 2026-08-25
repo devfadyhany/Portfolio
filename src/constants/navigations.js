@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export const navLinks = [
-  { name: "Home", href: "#" },
+  { name: "Home", href: "/" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects", tabId: "projects" },
 ];

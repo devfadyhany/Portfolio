@@ -12,8 +12,20 @@ button {
   cursor: pointer;
 }
 
+section {
+  scroll-margin-top: 65px;
+}
+
 .skills-container {
   background-color: #202329;
+}
+
+.newsletter-container {
+  background-color: #202329;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @keyframes float {
